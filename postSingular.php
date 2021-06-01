@@ -32,9 +32,11 @@
                                 </h4>
                                 <p class='card-text'><?php echo $value['mycontent'] ?></p>
                             </div>
-                            <a href='/hb-php/editBlogPost.php/?id=<?php echo $value['id'] ?>' class='btn btn-info text-white'> Edit Article</a>
-                            <a href='/hb-php' class='btn btn-success text-white'> Back to Articles</a>
-                            <a href='/hb-php/deleteBlogPost.php/?id=<?php echo $value['id'] ?>' class='btn btn-danger text-white'> Delete Article</a>
+                            <div class="d-flex justify-content-center mb-3">
+                                <a href='/hb-php/editBlogPost.php/?id=<?php echo $value['id'] ?>' class='btn btn-info text-white me-2'> Edit</a>
+                                <a href='/hb-php' class='btn btn-success text-white me-2'>Home</a>
+                                <a href='/hb-php/deleteBlogPost.php/?id=<?php echo $value['id'] ?>' class='btn btn-danger text-white'> Delete</a>
+                            </div>
                         </div>
                     </div>
                 <?php }
